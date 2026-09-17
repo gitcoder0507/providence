@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard | Providence Logistics</title>
+<meta http-equiv="refresh" content="0; url=admin/index.html">
+<link rel="icon" type="image/png" href="images/image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-body">
+<div class="admin-shell">
+  <aside class="admin-sidebar">
+    <a href="index.html" class="brand"><span class="brand-mark">P</span><span class="brand-text"><b>Providence</b><span>Admin Control Room</span></span></a>
+    <nav class="admin-nav" aria-label="Admin navigation">
+      <a class="active" href="admin.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Dashboard</a>
+      <a href="enquiries.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Enquiries <span class="nav-count">12</span></a>
+      <a href="vendor-enquiries.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V7l8-4 8 4v13"/><path d="M9 20v-6h6v6M2 20h20"/></svg>Vendor Enquiries <span class="nav-count">7</span></a>
+      <a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>View Website</a>
+    </nav>
+    <div class="admin-sidebar-foot">Operations console<br>Last sync: Today, 09:42 IST</div>
+  </aside>
+  <main class="admin-main">
+    <header class="admin-topbar">
+      <div><div class="admin-kicker">Monday, 07 September 2026</div><h1>Operations overview</h1><p>A live snapshot of Providence website activity and incoming requests.</p></div>
+      <div class="admin-user"><span class="admin-avatar">AK</span><span>Admin / Control Room</span></div>
+    </header>
+    <section class="admin-stats" aria-label="Website summary">
+      <article class="admin-stat"><span class="label">Total enquiries</span><strong>48</strong><span class="trend">+18% this month</span></article>
+      <article class="admin-stat"><span class="label">New enquiries</span><strong>12</strong><span class="trend">5 need action today</span></article>
+      <article class="admin-stat"><span class="label">Vendor enquiries</span><strong>07</strong><span class="trend">2 documents pending</span></article>
+      <article class="admin-stat"><span class="label">Quote conversion</span><strong>34%</strong><span class="trend">+6% vs last month</span></article>
+    </section>
+    <div class="admin-grid">
+      <section class="admin-panel">
+        <div class="admin-panel-head"><div><h2>Enquiry volume</h2><p class="subhead">Customer and vendor requests received</p></div><span class="admin-link">Last 7 months</span></div>
+        <div class="bar-chart" aria-label="Enquiry volume chart">
+          <div class="bar-col"><div class="bar" style="height:44%"></div><span>Mar</span></div><div class="bar-col"><div class="bar" style="height:52%"></div><span>Apr</span></div><div class="bar-col"><div class="bar" style="height:48%"></div><span>May</span></div><div class="bar-col"><div class="bar" style="height:68%"></div><span>Jun</span></div><div class="bar-col"><div class="bar" style="height:62%"></div><span>Jul</span></div><div class="bar-col"><div class="bar" style="height:82%"></div><span>Aug</span></div><div class="bar-col"><div class="bar" style="height:96%"></div><span>Sep</span></div>
+        </div>
+      </section>
+      <section class="admin-panel">
+        <div class="admin-panel-head"><div><h2>Recent activity</h2><p class="subhead">Latest updates from the team</p></div></div>
+        <div class="activity-list">
+          <div class="activity-item"><div class="activity-icon">N</div><div><p>New fleet audit request from <b>HexaCore Systems</b></p><time>18 minutes ago</time></div></div>
+          <div class="activity-item"><div class="activity-icon">V</div><div><p>Vendor documents uploaded by <b>MetroRide Mobility</b></p><time>1 hour ago</time></div></div>
+          <div class="activity-item"><div class="activity-icon">Q</div><div><p>Quote marked ready for <b>Northstar Foods</b></p><time>3 hours ago</time></div></div>
+          <div class="activity-item"><div class="activity-icon">A</div><div><p>New admin user added to the control room</p><time>Yesterday, 16:40</time></div></div>
+        </div>
+      </section>
+      <section class="admin-panel">
+        <div class="admin-panel-head"><div><h2>Latest enquiries</h2><p class="subhead">Customer requests needing attention</p></div><a class="admin-link" href="enquiries.html">View all &rarr;</a></div>
+        <div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Requester</th><th>Service</th><th>Status</th><th>Received</th></tr></thead><tbody>
+          <tr><td><span class="person">HexaCore Systems</span><span class="meta">Priya Raman</span></td><td>Employee Transport</td><td><span class="status new">New</span></td><td>18 min ago</td></tr>
+          <tr><td><span class="person">Northstar Foods</span><span class="meta">Arjun Mehta</span></td><td>Freight &amp; Cargo</td><td><span class="status progress">In progress</span></td><td>Today</td></tr>
+          <tr><td><span class="person">Vantage Finance</span><span class="meta">Meera Shah</span></td><td>Fleet Audit</td><td><span class="status review">Review</span></td><td>Yesterday</td></tr>
+        </tbody></table></div>
+      </section>
+      <section class="admin-panel">
+        <div class="admin-panel-head"><div><h2>Vendor pipeline</h2><p class="subhead">Partner onboarding status</p></div><a class="admin-link" href="vendor-enquiries.html">View all &rarr;</a></div>
+        <div class="activity-list">
+          <div class="activity-item"><div class="activity-icon">01</div><div><p><b>MetroRide Mobility</b> is ready for verification</p><time>2 documents pending</time></div></div>
+          <div class="activity-item"><div class="activity-icon">02</div><div><p><b>GreenLine Travels</b> submitted 14 vehicles</p><time>Awaiting compliance review</time></div></div>
+          <div class="activity-item"><div class="activity-icon">03</div><div><p><b>SwiftHaul Logistics</b> has been approved</p><time>Vendor ID PL-2048 created</time></div></div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

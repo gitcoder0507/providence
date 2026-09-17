@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enquiries | Providence Admin</title>
+<meta http-equiv="refresh" content="0; url=admin/enquiries.html">
+<link rel="icon" type="image/png" href="images/image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+</head>
+<body class="admin-body">
+<div class="admin-shell">
+  <aside class="admin-sidebar"><a href="index.html" class="brand"><span class="brand-mark">P</span><span class="brand-text"><b>Providence</b><span>Admin Control Room</span></span></a><nav class="admin-nav" aria-label="Admin navigation"><a href="admin.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>Dashboard</a><a class="active" href="enquiries.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="15" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Enquiries <span class="nav-count">12</span></a><a href="vendor-enquiries.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V7l8-4 8 4v13"/><path d="M9 20v-6h6v6M2 20h20"/></svg>Vendor Enquiries <span class="nav-count">7</span></a><a href="index.html"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>View Website</a></nav><div class="admin-sidebar-foot">Operations console<br>Last sync: Today, 09:42 IST</div></aside>
+  <main class="admin-main"><header class="admin-topbar"><div><div class="admin-kicker">Customer requests</div><h1>Enquiries</h1><p>Review quote requests and route them to the right operations owner.</p></div><div class="admin-user"><span class="admin-avatar">AK</span><span>Admin / Control Room</span></div></header>
+    <section class="admin-panel"><div class="admin-toolbar"><div class="admin-filters" data-filter-group="enquiries"><button class="admin-filter active" data-filter="all" type="button">All <span>(12)</span></button><button class="admin-filter" data-filter="new" type="button">New <span>(5)</span></button><button class="admin-filter" data-filter="progress" type="button">In progress <span>(4)</span></button><button class="admin-filter" data-filter="closed" type="button">Closed <span>(3)</span></button></div><input class="admin-search" data-table-search="enquiries" type="search" placeholder="Search enquiries..." aria-label="Search enquiries"></div>
+      <div class="admin-table-wrap"><table class="admin-table" data-admin-table="enquiries"><thead><tr><th>Requester</th><th>Contact</th><th>Service</th><th>Location</th><th>Status</th><th>Received</th></tr></thead><tbody>
+        <tr data-status="new"><td><span class="person">HexaCore Systems</span><span class="meta">Priya Raman</span></td><td>priya@hexacore.in<span class="meta">+91 98450 21872</span></td><td>Employee Transport</td><td>Chennai</td><td><span class="status new">New</span></td><td>18 min ago</td></tr>
+        <tr data-status="new"><td><span class="person">BlueArc Technologies</span><span class="meta">Karthik Rao</span></td><td>karthik@bluearc.in<span class="meta">+91 98840 11720</span></td><td>Fleet Audit</td><td>Bengaluru</td><td><span class="status new">New</span></td><td>Today, 08:55</td></tr>
+        <tr data-status="progress"><td><span class="person">Northstar Foods</span><span class="meta">Arjun Mehta</span></td><td>arjun@northstar.in<span class="meta">+91 99162 44102</span></td><td>Freight &amp; Cargo</td><td>Hyderabad</td><td><span class="status progress">In progress</span></td><td>Yesterday</td></tr>
+        <tr data-status="progress"><td><span class="person">Vantage Finance</span><span class="meta">Meera Shah</span></td><td>meera@vantage.in<span class="meta">+91 98451 33018</span></td><td>Corporate Rentals</td><td>Mumbai</td><td><span class="status progress">In progress</span></td><td>05 Sep</td></tr>
+        <tr data-status="closed"><td><span class="person">Orbit Manufacturing</span><span class="meta">Nikhil Joseph</span></td><td>nikhil@orbit.in<span class="meta">+91 97890 55214</span></td><td>Warehousing</td><td>Chennai</td><td><span class="status closed">Closed</span></td><td>03 Sep</td></tr>
+        <tr data-status="closed"><td><span class="person">Aster Events</span><span class="meta">Rhea Menon</span></td><td>rhea@aster.in<span class="meta">+91 98403 90442</span></td><td>MICE Transport</td><td>Delhi NCR</td><td><span class="status closed">Closed</span></td><td>01 Sep</td></tr>
+      </tbody></table><div class="admin-empty">No enquiries match your search.</div></div>
+    </section>
+  </main>
+</div><script src="js/main.js"></script>
+</body>
+</html>

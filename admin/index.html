@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Admin Dashboard | Providence</title>
+<link rel="icon" type="image/png" href="../images/image.png">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body class="admin-body dashboard-page">
+<div class="admin-layout">
+<aside class="sidebar">
+<a class="brand" href="../index.html"><img src="../images/image.png" alt="Providence"><span><strong>Providence</strong><small>Control room</small></span></a>
+<nav class="admin-nav" aria-label="Admin navigation">
+<a class="active" href="index.html"><span>▦</span>Dashboard</a>
+<a href="enquiries.html"><span>↳</span>Enquiries</a>
+<a href="vendors.html"><span>◇</span>Vendor enquiries</a>
+<a href="clients.html"><span>◎</span>Clients</a>
+<a href="approved-vendors.html"><span>▱</span>Vendors</a>
+<a href="rejected.html"><span>×</span>Rejected</a>
+</nav>
+<a class="sidebar-site-link" href="../index.html">View website <span>↗</span></a>
+</aside>
+<main class="content">
+<nav class="admin-topnav" aria-label="Workspace navigation"></nav>
+<header class="welcome"><span data-date></span><h1>Good morning, Admin</h1></header>
+<section class="dashboard-section">
+<div class="section-heading"><div><span class="eyebrow">Operations overview</span><h2>Dashboard</h2></div><span class="live-label"><i></i>Live browser data</span></div>
+<div class="summary">
+<a class="metric" href="enquiries.html"><span>Open enquiries</span><strong data-summary="enquiries">00</strong><small>From website submissions <b>↗</b></small></a>
+<a class="metric" href="vendors.html"><span>Vendor enquiries</span><strong data-summary="vendors">00</strong><small>From partner submissions <b>↗</b></small></a>
+<a class="metric" href="clients.html"><span>Active clients</span><strong data-summary="clients">00</strong><small>No client records <b>↗</b></small></a>
+<a class="metric" href="approved-vendors.html"><span>Approved vendors</span><strong data-summary="approvedVendors">00</strong><small>No vendor records <b>↗</b></small></a>
+</div>
+</section>
+<div class="dashboard-grid">
+<section class="dashboard-panel"><div class="panel-heading"><div><span class="eyebrow">Live queue</span><h3>Recent enquiries</h3></div><a href="enquiries.html">View all ↗</a></div><div class="queue" data-dashboard-queue><span class="empty-title">No activity yet</span><span>Website submissions will appear in the live queue.</span></div></section>
+<section class="dashboard-panel"><div class="panel-heading"><div><span class="eyebrow">Service health</span><h3>Today at a glance</h3></div><span class="awaiting">Awaiting data</span></div><div class="health-list"><div><span>Trips completed</span><strong>No data</strong></div><div><span>On-time arrival</span><strong>No data</strong></div><div><span>Active fleet</span><strong>No data</strong></div></div><p class="monitoring">Control room monitoring 24/7 routes</p></section>
+</div>
+<section class="dashboard-panel performance-panel"><div class="panel-heading"><div><span class="eyebrow">Portfolio snapshot</span><h3>Client performance</h3></div><a href="clients.html">Manage clients ↗</a></div><div class="performance-grid"><div><strong>0</strong><span>Monthly billing</span><em>No data</em></div><div><strong>0</strong><span>Employees served</span><em>No data</em></div><div><strong>0</strong><span>Corporate accounts</span><em>No data</em></div><div><strong>0</strong><span>Service rating</span><em>No data</em></div></div></section>
+</main>
+</div>
+<script src="admin.js"></script>
+</body>
+</html>
